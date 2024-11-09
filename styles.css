@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background-color: #000;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    border-top: 5px solid #FFD900;
+}
+
+.logo {
+    font-size: 24px;
+    color: #FFD900;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 0;
+    transition: 0.3s;
+}
+
+nav a.active {
+    color: #FFD900;
+    border-bottom: 2px solid #FFD900;
+}
+
+nav a:hover {
+    color: #FFD900;
+}
+
+/* Profile Image Styling for Construction Sections */
+.profile-img {
+    width: 300px; /* Set the desired width */
+    height: 300px; /* Set the desired height */
+    border-radius: 50%; /* Makes the image container circular */
+    overflow: hidden; /* Ensures the image fits within the circular container */
+    display: flex; /* Centers the image */
+    align-items: center; /* Centers the image vertically */
+    justify-content: center; /* Centers the image horizontally */
+    margin: 0 auto; /* Centers the container in the section */
+    border: 5px solid #FFD900; /* Adds a yellow border */
+}
+
+.profile-img img {
+    width: 100%; /* Makes the image fill the container */
+    height: 100%; /* Ensures the image covers the entire container */
+    object-fit: cover; /* Maintains aspect ratio while filling the container */
+}
+
+/* Home Content Styling */
+.home-content {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.home-content h1 {
+    font-size: 48px;
+}
+
+.home-content h1 span {
+    color: #FFD900;
+}
+
+.home-content h2 {
+    font-size: 36px;
+    margin-top: 10px;
+}
+
+.home-content h2 span {
+    color: #FFD900;
+}
+
+.home-content p {
+    margin-top: 20px;
+    font-size: 16px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+    filter: invert(100%);
+}
+
+/* Click Me Button */
+.click-btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 30px;
+    border: 2px solid #FFD900;
+    color: #FFD900;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none;
+}
+
+.click-btn:hover {
+    background-color: #FFD900;
+    color: #000;
+}
+
+/* Section Styling */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+/* Construction Content Styling */
+.construction-content {
+    margin-top: 50px;
+    text-align: center; /* Center text and image */
+}
+
+/* Web Development Section Styling */
+.web-development {
+    height: 100vh; /* Full height of the viewport */
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    flex-direction: column; /* Stack content vertically */
+}
+
+.web-development h2 {
+    color: #FFD900; /* Header color */
+    margin-bottom: 20px; /* Space below header */
+    font-size: 36px; /* Font size for header */
+}
+
+.project-buttons {
+    display: flex;
+    flex-direction: row; /* Change to row for left to right arrangement */
+    gap: 20px; /* Space between buttons */
+}
+
+.project-btn {
+    background-color: transparent;
+    color: #FFD900; /* Text color */
+    border: 2px solid #FFD900; /* Border color */
+    padding: 15px 30px; /* Padding */
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline */
+    font-size: 18px; /* Font size */
+    transition: background-color 0.3s, color 0.3s; /* Transition for hover effect */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.project-btn:hover {
+    background-color: #FFD900; /* Change background on hover */
+    color: #000; /* Change text color on hover */
+}
+
+/* Videos Section Styling */
+.videos {
+    text-align: center;
+    padding: 20px;
+}
+
+.videos h2 {
+    color: #FFD900; /* Header color */
+    margin-bottom: 20px; /* Space below header */
+    font-size: 36px; /* Font size for header */
+}
+
+.video-container {
+    display: flex;
+    flex-wrap: wrap; /* Wrap to the next line if needed */
+    justify-content: center; /* Center the videos */
+    gap: 20px; /* Space between video thumbnails */
+}
+
+.video-container a {
+    text-decoration: none; /* Remove underline from links */
+    color: #fff; /* Text color */
+}
+
+.video-container img {
+    width: 200px; /* Thumbnail width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
+    transition: transform 0.3s; /* Smooth hover effect */
+}
+
+.video-container img:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+.video-container h3 {
+    margin-top: 10px; /* Space above video title */
+    font-size: 18px; /* Font size for video titles */
+    color: #FFD900; /* Color for video titles */
+}
+
